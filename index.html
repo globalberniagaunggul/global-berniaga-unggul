@@ -12,19 +12,18 @@
         .tagline { font-size: 1.1em; opacity: 0.9; margin-top: 10px; }
         .section-title { border-bottom: 3px solid #003366; display: inline-block; padding-bottom: 5px; margin: 40px 0 20px 0; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { border: none; padding: 25px; border-radius: 12px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; border-top: 4px solid #003366; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .card-link { text-decoration: none; color: inherit; display: block; }
+        .card { border: none; padding: 25px; border-radius: 12px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; border-top: 4px solid #003366; height: 100%; box-sizing: border-box; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); border-top: 4px solid #cc8400; }
         .card h3 { color: #003366; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .more-info { display: block; margin-top: 15px; color: #cc8400; font-weight: bold; font-size: 0.9em; }
         .contact-section { text-align: center; background: #fff; border: 2px solid #003366; padding: 40px 20px; margin-top: 50px; border-radius: 15px; }
-        
-        /* Tombol Kontak */
         .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
         .btn { display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; transition: 0.3s; color: white; }
-        .btn-wa { background: #25D366; } /* Warna WhatsApp */
-        .btn-tel { background: #007bff; } /* Warna Telepon */
-        .btn-padi { background: #003366; } /* Warna PaDi UMKM */
+        .btn-wa { background: #25D366; }
+        .btn-tel { background: #007bff; }
+        .btn-padi { background: #003366; }
         .btn:hover { opacity: 0.8; transform: scale(1.05); }
-
         footer { text-align: center; padding: 30px; color: #777; font-size: 0.9em; }
     </style>
 </head>
@@ -36,35 +35,48 @@
 </header>
 
 <div class="container">
-    <h2 class="section-title">Product & Services</h2>
+    <h2 class="section-title">Our Specialized Categories</h2>
+    <p style="margin-bottom: 30px;">Silakan klik pada kategori untuk melihat detail penawaran kami:</p>
+    
     <div class="grid">
-        <div class="card">
-            <h3>Industrial Engineering</h3>
-            <p>Technical support, maintenance, and industrial system optimization.</p>
-        </div>
-        <div class="card">
-            <h3>Safety Equipment</h3>
-            <p>Complete PPE: Helmets, Vests, Gloves, and Full Body Harnesses.</p>
-        </div>
-        <div class="card">
-            <h3>Corporate Merchandise</h3>
-            <p>Custom souvenirs and premium branded corporate gifts.</p>
-        </div>
-        <div class="card">
-            <h3>Office Gear & Bags</h3>
-            <p>Smart gadgets, premium office bags, and IT accessories.</p>
-        </div>
+        <a href="LINK_ENGINEERING_DISINI" class="card-link">
+            <div class="card">
+                <h3>Engineering & IT Services</h3>
+                <p>Comprehensive technical solutions including industrial maintenance, system optimization, and integrated IT services to support your business operations.</p>
+                <span class="more-info">Lihat Detail &raquo;</span>
+            </div>
+        </a>
+
+        <a href="LINK_SAFETY_DISINI" class="card-link">
+            <div class="card">
+                <h3>Safety Equipment</h3>
+                <p>Providing a complete range of Personal Protective Equipment (PPE) and industrial safety tools to ensure total protection in every work environment.</p>
+                <span class="more-info">Lihat Produk &raquo;</span>
+            </div>
+        </a>
+
+        <a href="LINK_MERCHANDISE_DISINI" class="card-link">
+            <div class="card">
+                <h3>Corporate Merchandise</h3>
+                <p>High-quality custom souvenirs and premium branded corporate gifts tailored for your corporate branding and special events.</p>
+                <span class="more-info">Lihat Katalog &raquo;</span>
+            </div>
+        </a>
+
+        <a href="LINK_OFFICE_DISINI" class="card-link">
+            <div class="card">
+                <h3>Office Gear & Bags</h3>
+                <p>Modern office equipment, smart gadgets, and premium professional bags designed for business efficiency and style.</p>
+                <span class="more-info">Lihat Koleksi &raquo;</span>
+            </div>
+        </a>
     </div>
 
     <div class="contact-section">
         <h2 style="color: #003366; margin-top:0;">Contact Us for Quotation</h2>
-        <p>Silakan hubungi kami langsung atau kunjungi toko resmi kami di platform PaDi UMKM.</p>
-        
         <div class="btn-group">
             <a href="https://wa.me/6285711115710" class="btn btn-wa">WhatsApp Kami</a>
-            
             <a href="tel:+6285711115710" class="btn btn-tel">Hubungi Telepon</a>
-            
             <a href="https://padiumkm.id/store/69fec01f24aef996acdd9717" target="_blank" class="btn btn-padi">PaDi UMKM Profile</a>
         </div>
     </div>
