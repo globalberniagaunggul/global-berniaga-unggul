@@ -15,10 +15,16 @@
         .card { border: none; padding: 25px; border-radius: 12px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; border-top: 4px solid #003366; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
         .card h3 { color: #003366; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .card ul { padding-left: 20px; font-size: 0.95em; color: #555; }
-        .contact-section { text-align: center; background: #003366; color: white; padding: 50px 20px; margin-top: 50px; border-radius: 15px; }
-        .contact-btn { display: inline-block; background: #cc8400; color: white; padding: 15px 40px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-        .contact-btn:hover { background: #e69500; transform: scale(1.05); }
+        .contact-section { text-align: center; background: #fff; border: 2px solid #003366; padding: 40px 20px; margin-top: 50px; border-radius: 15px; }
+        
+        /* Tombol Kontak */
+        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
+        .btn { display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; transition: 0.3s; color: white; }
+        .btn-wa { background: #25D366; } /* Warna WhatsApp */
+        .btn-tel { background: #007bff; } /* Warna Telepon */
+        .btn-padi { background: #003366; } /* Warna PaDi UMKM */
+        .btn:hover { opacity: 0.8; transform: scale(1.05); }
+
         footer { text-align: center; padding: 30px; color: #777; font-size: 0.9em; }
     </style>
 </head>
@@ -30,66 +36,37 @@
 </header>
 
 <div class="container">
-    <h2 class="section-title">About Our Company</h2>
-    <p>Located in South Sumatra, <strong>CV Global Berniaga Unggul</strong> is a leading director-led enterprise specializing in industrial procurement and technical excellence. We serve energy, mining, and industrial sectors with a focus on reliability and quality.</p>
-    
-    <h2 class="section-title">Industrial & Engineering Services</h2>
+    <h2 class="section-title">Product & Services</h2>
     <div class="grid">
         <div class="card">
-            <h3>Engineering Services</h3>
-            <p>Expert technical support and maintenance for industrial systems, including:</p>
-            <ul>
-                <li>Mechanical Troubleshooting</li>
-                <li>System Optimization</li>
-                <li>Preventive Maintenance</li>
-            </ul>
+            <h3>Industrial Engineering</h3>
+            <p>Technical support, maintenance, and industrial system optimization.</p>
         </div>
         <div class="card">
-            <h3>Industrial Supplier</h3>
-            <p>Reliable supply chain for heavy-duty industrial needs:</p>
-            <ul>
-                <li>Mechanical Spare Parts</li>
-                <li>Power Plant Components</li>
-                <li>Industrial Procurement</li>
-            </ul>
-        </div>
-    </div>
-
-    <h2 class="section-title">Product Categories</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Safety Equipment (PPE)</h3>
-            <p>Comprehensive safety solutions for industrial environments:</p>
-            <ul>
-                <li>Safety Helmets & Vests</li>
-                <li>Protective Gloves & Footwear</li>
-                <li>Full Body Harnesses</li>
-            </ul>
+            <h3>Safety Equipment</h3>
+            <p>Complete PPE: Helmets, Vests, Gloves, and Full Body Harnesses.</p>
         </div>
         <div class="card">
             <h3>Corporate Merchandise</h3>
-            <p>Professional souvenirs and branding tools:</p>
-            <ul>
-                <li>Custom Souvenirs</li>
-                <li>Branded Corporate Gifts</li>
-                <li>Promotional Merchandise</li>
-            </ul>
+            <p>Custom souvenirs and premium branded corporate gifts.</p>
         </div>
         <div class="card">
-            <h3>Office Gadgets & Gear</h3>
-            <p>Modern equipment for efficient office operations:</p>
-            <ul>
-                <li>Smart Office Gadgets</li>
-                <li>Premium Office Bags & Organizers</li>
-                <li>IT Accessories & Peripherals</li>
-            </ul>
+            <h3>Office Gear & Bags</h3>
+            <p>Smart gadgets, premium office bags, and IT accessories.</p>
         </div>
     </div>
 
     <div class="contact-section">
-        <h2>Ready to Collaborate?</h2>
-        <p>Contact us today for professional inquiries and detailed quotations.</p>
-        <a href="mailto:globalberniagaunggul@gmail.com" class="contact-btn">Get a Quote Now</a>
+        <h2 style="color: #003366; margin-top:0;">Contact Us for Quotation</h2>
+        <p>Silakan hubungi kami langsung atau kunjungi toko resmi kami di platform PaDi UMKM.</p>
+        
+        <div class="btn-group">
+            <a href="https://wa.me/6285711115710" class="btn btn-wa">WhatsApp Kami</a>
+            
+            <a href="tel:+6285711115710" class="btn btn-tel">Hubungi Telepon</a>
+            
+            <a href="https://padiumkm.id/store/69fec01f24aef996acdd9717" target="_blank" class="btn btn-padi">PaDi UMKM Profile</a>
+        </div>
     </div>
 </div>
 
